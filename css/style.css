@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* ================ GLB TAGS ================ */
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --bg-2: #f8f9fa;
+  --bg-subheading: #fef0da;
+  --clr-subheading: #fbb449;
+  --clr-primary: #081158;
+  --clr-p: rgba(0, 0, 0, 0.5);
+  --clr-black: black;
+  --clr-white: white;
+}
+.mt-80 {
+  margin-top: 80px;
+}
+.mb-80 {
+  margin-bottom: 80px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--clr-primary);
+  text-transform: capitalize;
+}
+h5 {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+h4 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+h2 {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--clr-black);
+}
+p {
+  color: var(--clr-p);
+  font-size: 16px;
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--clr-p);
+  font-size: 16px;
+  display: inline-flex;
+}
+section,
+footer {
+  padding: 8rem 0;
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.btn-primary {
+  padding: 12px 30px;
+  border-radius: 30px;
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  border: none;
+  border: 1px solid transparent;
+}
+.btn-primary:hover {
+  color: var(--clr-primary);
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-primary);
+}
+.btn-outline-primary {
+  color: var(--clr-primary);
+  border: 1px solid var(--clr-primary);
+  border-color: var(--clr-primary);
+  padding: 12px 30px;
+  border-radius: 30px;
+}
+.btn-outline-primary:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  border: none;
+  border: 1px solid transparent;
+}
+
+.subheading {
+  display: inline-block;
+  padding: 5px 20px;
+  color: var(--clr-subheading);
+  text-transform: uppercase;
+  background-color: var(--bg-subheading);
+  border-radius: 30px;
+  font-size: 13.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+i {
+  color: var(--clr-subheading);
+}
+/* ====== Start Styling ====== */
+nav .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+nav .download_btn{
+  display: inline-block;
+  padding: 8px 10px;
+  
+}
+#home .heading_hero {
+  padding-top: 6rem;
+}
+#features p {
+  max-width: 600px;
+  margin: auto;
+}
+#testimonials p {
+  max-width: 1000px;
+  margin: auto;
+}
+.container_avatars .avatar img {
+  width: 70px;
+}
+.swiper-wrapper {
+  flex-wrap: nowrap;
+}
+.swiper {
+  display: flex;
+  justify-content: center;
+  padding: 1px;
+}
+.container_avatars {
+  padding-bottom: 35px;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--clr-subheading);
+}
+footer .footer_social_media {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+footer i {
+  color: var(--clr-primary);
+  font-size: 1.55rem;
+}
+
+@media screen and (max-width: 991px){
+  .navbar-collapse {
+    height: 100vh !important;
+  }
+  .navbar-nav{
+    padding-top: 50px;
+    text-align: center;
+  }
+  .btn_nav{
+    text-align: center ;
+  }
+}
+@media screen and (max-width: 767px) {
+  section {
+    padding: 6rem 0;
+  }
+  #home .btn-outline-primary {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .btn_grp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+  .illustration_home {
+    text-align: center !important;
+    width: 550px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  section {
+    padding: 4.3rem 0;
+  }
+  .illustration_home {
+    text-align: center !important;
+    width: 750px !important;
+   margin-top: 50px;
+
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1279px){
+  section {
+    padding: 4.3rem 0;
+  }
+  #home .btn-outline-primary {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
